@@ -1,0 +1,7 @@
+dependencies:
+    'ruby1.9.3':
+        ensure: latest
+    'ruby'
+        ensure: latest
+    'build-essential'
+        ensure: latest

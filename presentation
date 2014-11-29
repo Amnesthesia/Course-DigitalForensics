@@ -1,0 +1,37 @@
+What? X
+Network lag
+System clock offset X
+Uncertain origin    
+Log tampering       X
+Data loss
+Levels of Uncertainty
+
+
+What?
+----------------
+This presentation is about the paper Error, Uncertainty and Loss in Digital Evidence, which brings up different sources of uncertainty in digital evidence and how to measure it. One can never be 100% sure of something, but can sometimes get pretty close - so the question is then, *how* certain can we be that the information gathered is actually correct?
+
+Such information is important not only to know how reliable the evidence is, but to be able to show this to somebody who isn't as technically inclined or involved in the evidence collection -- such a as a judge or jury during a trial. If evidence is presented -- and especially when such evidence may be the basis for a legal sentence -- is there perhaps a way we can convey how trustworthy this evidence is in an arbitrary manner understandable even by outsiders?
+
+System clock offset
+----------------
+System clock offset is typically not a type of uncertainty, but a source of Temporal Uncertainty - that is, time based uncertainty. When investigating a crime, knowing the time and order of events is often crucial, which is why the common practice of storing information tagged with timestamps is great in such a case. However, there are many ways this could go wrong -- the most common one being an incorrectly configured system clock.
+
+For example, if the system clock in a router is hours ahead, the difference can make it rather difficult to see patterns between events over multiple machines, and get the order of events in the big picture correct. 
+
+When syslog messages are saved, they're tagged with the timestamp of the server -- this means that if the system clock on the server is not set properly, even messages sent for storage from a remote system will be tagged with the wrong time, regardless of the time of the sending remote system.
+
+Another challenge with system clock offset is knowing *when* this issue occurred and if the system clock was actually showing the wrong time at the time of the events, or if it has been modified afterwards.
+
+Time-Zone difference can also be an issue when comparing events from multiple systems. 
+
+
+Log tampering
+----------------
+Log tampering can make investigations so much harder -- and logs can't always be trusted either. On Unix systems for example, messages sent through the /dev/log socket to syslogd are written to the syslog, and these can usually be created by anyone; therefore, fabricating log entries is fairly easy. To make matters worse, if the message already comes with a timestamp, syslogd doesn't append one to the message - meaning that even if a user has no write access to the actual log, the user can fabricate log messages *including* their timestamp tag.
+
+Logs for user login, such as utmp and wtmp, are usually harder to tamper with for a non-root user, but pose another risk. The utmp file contains information about currently logged in users, but not all programs make use of utmp, and therefore malware such as backdoors often avoid making log entries. There are also freely available software to tamper with these files, and although Windows NT login entries may be slightly harder to tamper with, there's not much logging to begin with -- and even so, there's software for deleting these logs as well. Web server logs tend to be *even easier* to alter, which further reduces their level of trustworthyness.
+
+wtmp logs containing log-out information are also prone to log corruption, partly because the logout process occasionally fails to update this file, making it appear as if a user has been logged on for much longer than was actually the case. 
+
+

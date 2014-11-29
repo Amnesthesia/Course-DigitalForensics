@@ -1,0 +1,8 @@
+:backends:
+    - yaml
+:hierarchy:
+    - %{::environment}/%{::role}
+    - %{::role}
+    - dependencies
+:yaml:
+    :datadir: '/etc/puppet/hieradata'

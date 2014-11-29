@@ -1,0 +1,1 @@
+{"virtualbox":{"/vagrant":{"guestpath":"/vagrant","hostpath":"/home/amnesthesia/Dropbox/Documents/Assignments/DigitalForensics/project","disabled":false},"/tmp/vagrant-puppet-3/manifests":{"owner":"root","guestpath":"/tmp/vagrant-puppet-3/manifests","hostpath":"/home/amnesthesia/Dropbox/Documents/Assignments/DigitalForensics/project/manifests","disabled":false}}}
