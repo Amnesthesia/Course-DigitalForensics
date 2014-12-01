@@ -32,6 +32,6 @@ node default{
         city => 'Gjovik',
         organization => 'hig.no',
         email => 'please.dont@email.me',
-        server => ${::ipaddress}
+        server => $::ipaddress
     }
 }
