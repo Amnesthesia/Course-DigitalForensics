@@ -1,0 +1,86 @@
+% This file was created with JabRef 2.10.
+% Encoding: Cp1252
+
+
+@Electronic{broinstall,
+  Title                    = {Installing Bro},
+  Url                      = {https://www.bro.org/sphinx/install/install.html},
+
+  Owner                    = {Anders},
+  Timestamp                = {2014.11.24}
+}
+
+@Electronic{broorg,
+  Title                    = {The Bro Network Security Monitor},
+  Url                      = {https://www.bro.org/},
+
+  Owner                    = {Anders},
+  Timestamp                = {2014.11.24}
+}
+
+@Electronic{broveview,
+  Title                    = {Overview},
+  Organization             = {The Bro Project},
+  Url                      = {https://www.bro.org/sphinx/intro/index.html},
+
+  Owner                    = {Anders},
+  Timestamp                = {2014.11.24}
+}
+
+@Electronic{downloads,
+  Title                    = {Downloads},
+  Url                      = {https://www.bro.org/download/index.html},
+
+  Owner                    = {Anders},
+  Timestamp                = {2014.11.25}
+}
+
+@Electronic{emne,
+  Title                    = {Systemadministrasjon},
+  Url                      = {http://hig.no/content/view/full/31049/language/nor-NO},
+
+  Owner                    = {Anders},
+  Timestamp                = {2014.11.24}
+}
+
+@Electronic{Jessie,
+  Title                    = {Debian Jessie},
+  Url                      = {https://wiki.debian.org/DebianJessie},
+
+  Owner                    = {Anders},
+  Timestamp                = {2014.11.25}
+}
+
+@Electronic{panamanbro,
+  Title                    = {Panaman/Bro},
+  HowPublished             = {forge.puppetlabs.com},
+  Url                      = {https://forge.puppetlabs.com/panaman/bro},
+
+  Owner                    = {Anders},
+  Timestamp                = {2014.11.24}
+}
+
+@Electronic{panbrovar,
+  Title                    = {Panaman/Bro - Variables},
+  Url                      = {https://forge.puppetlabs.com/panaman/bro/readme#other-customizable-variables},
+
+  Owner                    = {Anders},
+  Timestamp                = {2014.11.25}
+}
+
+@Electronic{Puppetlabs,
+  Title                    = {Puppetlabs},
+  Url                      = {http://puppetlabs.com/},
+
+  Owner                    = {Anders},
+  Timestamp                = {2014.11.24}
+}
+
+@Electronic{reprepro,
+  Title                    = {SettingUpSignedAptRepositoryWithReprepro},
+  Url                      = {https://wiki.debian.org/SettingUpSignedAptRepositoryWithReprepro},
+
+  Owner                    = {Anders},
+  Timestamp                = {2014.11.25}
+}
+
