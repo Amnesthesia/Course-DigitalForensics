@@ -10,7 +10,7 @@ Let's assume two people - Alice and Bobster - want to communicate with eachother
 
 Alice creates an email and sends it off to Bob using SMTP through TOR; the first thing that happens is that a path is selected through the TOR network, ending at an exit node. Each packet is encrypted several times, so let's assume this packet will travel through a path of 6 non-exit relays before reaching its destination: The packets are encrypted first with the last nodes "public key", meaning that only the last node can access the unencrypted information. \\
 
-\includegraphics[scale=0.75]{tor.png}
+\includegraphics{tor.png}
 
 This newly created packet is again encrypted with the destination IP of the relay prior to the last one. This continues until the packet has been encrypted in several "layers", with the last layer being decryptable only by the first relay in the path it will traverse. When the packet is received by the first relay, it "peels off", or decrypts, the first layer of encryption - accessing only a new encrypted packet with a new destination IP to send it off to. \\
 
