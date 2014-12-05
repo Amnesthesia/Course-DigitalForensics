@@ -30,6 +30,7 @@ We decided to set up a TOR exit node using Puppet for easy configuration, and re
 
 After setting up the exit node configuration, we set TCPdump to listen and dump traffic into a plethora of different \textit{.pcap} files. These files we could then use for inspecting packets and follow TCP streams in Wireshark.\\
 
+\subsection{Analyzing captured data}
 To further analyze interesting traffics in these files, we could run \textit{p0f}, the passive OS fingerprinting tool to retrieve some further information on a target, mainly the operating system used by the source. Something that makes it rather difficult to do this with TOR traffic is that we can't sort targets based on source IP addresses. This is a result of how TOR creates a path in the onion router network.\\
 
 A useful tool for managing large amounts of captured network traffic for analysis is Xplico, which we attempted to run on our 19Gb of captured data. This turned out a failure unfortunately - although all data was supposedly decoded, the DeMa process (DecodingManager) suffered segmentation-faults, dumped its core, and thus it could not proceed to properly sort it out for analysis. Since the data was stored in a pcap file, it is possible to open it with Wireshark, but because of the size of it, this became much more complicated with the resources available on our machine, and left us lost in an abyss of information.\\
