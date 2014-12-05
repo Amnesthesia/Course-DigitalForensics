@@ -20,6 +20,11 @@ In november this year a joint taskforce consisting of, amongst others, the FBI a
 In this case the task force claimed to have infiltrated the group of administrators behind these sites, and therefore being able to locate the physical location of the server and identifying the leader of the group behind the site.
 \subsection{Traffic analysis}
 A research article released earlier this year showed that with a success rate of 81.4\% the researchers where able to de-anonymising the originating IP address in the TOR network by exploiting technologies like Netflow, commonly built into Cisco router protocols.~\cite{torrouter}~\cite{traffic_analysis}
+\begin{quote} 
+The technique depends on injecting a repeating traffic pattern – such as HTML files, the same kind of traffic of which most Tor browsing consists – into the TCP connection that it sees originating in the target exit node, and then comparing the server’s exit traffic for the Tor clients, as derived from the router’s flow records, to facilitate client identification.~\cite{torrouter}
+\end{quote}
+
+
 
 %key: torrouter, traffic_analysis
 %key: fsecapt
