@@ -5,9 +5,20 @@ When researching the topic of this article, we looked into several known and pre
 One particular technology that has recieved quite a bit attentio the last year is "Canvas fingerprinting", a technology meant to replace cookies in tracking a unique user across websites. It functions by instructing the browser of the user to draw a figure, using html5, the variations in browser, GPU, drivers and other settings and specifications. It is possible to identify a user to some degree, while the previously mentioned settings are not always unique for every user the technology has some shortcomings.~\cite{wiki_canvas}
 
 Somewhat related to this is the standard way of tracking unique users, cookies.
-It exists many different types of cookies, but the the short summary of it is that its a very common way to track users across one or several websites. It has some shortcomings, due it usually being limited to the current browser/user/system.~\cite{wiki_cookie}
+It exists many different types of cookies, but the the short summary of it is that its a very common way to track users across one or several websites. It has some shortcommings, due it usually being limited to the current browser/user/system.~\cite{wiki_cookie}
 
-%uuid2; This cookie contains a unique randomly-generated value that enables the Platform to distinguish browsers and devices. It is matched against information – such as advertising interest segments and histories of ads shown in the browser or device – provided by clients or other third parties and stored on the Platform.
+\subsection{Altering the expected content in communication} % messy title...
+Earlier this year it was uncovered that at least one tor exit node based in Russia was "patching" binaries transmitted through it.~\cite{fsecapt}~\cite{lev_bin_apt}
+It appeared that in this particular incident it was mainly used to spread malware with no particular targeted agenda other then the "usual" malicious behaviour of malware.
+
+%hva ellers kan brukes for å kartlegge/fingerprinte folk / annet relevant?
+%europol/fbi samarbeid mot div onion sites, relevant også med tanke på off-shore vpn-tilbydere. 
+
+\subsection{Europol \& FBI shuts down dark marketets on TOR network}
+
+In november this year a joint taskforce consisting of, amongst others, the FBI and Europol took down several marketplaces hosted in the TOR network.~\cite{wired_tor_bust}~\cite{euro_tor_bust}
+In this case the task force claimed to have infiltrated the group of administrators behind these sites, and therefore being able to locate the physical location of the server and identifying the leader of the group behind the site.
+%\subsection{title}
 
 %key: torrouter
 %key: fsecapt
@@ -17,8 +28,3 @@ It exists many different types of cookies, but the the short summary of it is th
 %key wiki_cookie
 %~\cite{key}
 
-
-\begin{itemize}
-\item browser canvasing?
-\item stuff
-\end{itemize}
