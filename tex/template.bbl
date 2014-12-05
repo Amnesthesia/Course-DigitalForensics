@@ -35,4 +35,17 @@ Wikipedia. (2014, december) Canvas fingerprinting --- wikipedia{,} the free
   \url{http://en.wikipedia.org/w/index.php?title=HTTP_cookie&oldid=636454636}
 \BIBentrySTDinterwordspacing
 
+\bibitem{fsecapt}
+\BIBentryALTinterwordspacing
+(2014, November) Onionduke: Apt attacks via the tor network. FSLabs. [Online].
+  Available: \url{https://www.f-secure.com/weblog/archives/00002764.html}
+\BIBentrySTDinterwordspacing
+
+\bibitem{lev_bin_apt}
+\BIBentryALTinterwordspacing
+J.~Pitts. (2014, The Case of the Modified Binaries) The case of the modified
+  binaries. leviathansecurity.com. [Online]. Available:
+  \url{http://www.leviathansecurity.com/blog/the-case-of-the-modified-binaries/}
+\BIBentrySTDinterwordspacing
+
 \end{thebibliography}

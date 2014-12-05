@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2012.10.23)  4 DEC 2014 22:32
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2012.10.23)  5 DEC 2014 13:23
 entering extended mode
 **template.tex
 
@@ -706,22 +706,25 @@ Underfull \hbox (badness 10000) in paragraph at lines 9--10
 
 ) ("D:\skolestuff\h2014\digital forensics\Course-DigitalForensics\tex\survey.te
 x"
-LaTeX Font Info:    Try loading font information for OMS+ppl on input line 23.
+LaTeX Font Info:    Font shape `OT1/ppl/bx/n' in size <12> not available
+(Font)              Font shape `OT1/ppl/b/n' tried instead on input line 5.
+pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.16 
+      [1
+
+])
+("D:\skolestuff\h2014\digital forensics\Course-DigitalForensics\tex\results.tex
+"
+LaTeX Font Info:    Try loading font information for OMS+ppl on input line 5.
  ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\psnfss\omsppl.fd"
 File: omsppl.fd 
 )
 LaTeX Font Info:    Font shape `OMS/ppl/m/n' in size <10.95> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 23.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 5.
 )
-("D:\skolestuff\h2014\digital forensics\Course-DigitalForensics\tex\results.tex
-"pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
- been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.5 \item e
-           vidence integrity [1
-
-])
 ("D:\skolestuff\h2014\digital forensics\Course-DigitalForensics\tex\conclusion.
 tex")
 ("D:\skolestuff\h2014\digital forensics\Course-DigitalForensics\tex\appendix.te
@@ -741,26 +744,26 @@ x")
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 35.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 35.
 Package rerunfilecheck Info: File `template.out' has not changed.
-(rerunfilecheck)             Checksum: 59DC9AC17817DD2F03520367CCE1EFB8;256.
+(rerunfilecheck)             Checksum: C8D21F5FEE99D84F798835647FC930EE;441.
 Package rerunfilecheck Info: File `template.brf' has not changed.
-(rerunfilecheck)             Checksum: 83B09613360B63AA6E0DE2817836A770;88.
+(rerunfilecheck)             Checksum: 90DD715831B01F723CE82F6BA349C31F;200.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 35.
  ) 
 Here is how much of TeX's memory you used:
- 8900 strings out of 494045
- 127672 string characters out of 3145974
- 231375 words of memory out of 3000000
- 12035 multiletter control sequences out of 15000+200000
- 16846 words of font info for 47 fonts, out of 3000000 for 9000
+ 8919 strings out of 494045
+ 127921 string characters out of 3145974
+ 231437 words of memory out of 3000000
+ 12049 multiletter control sequences out of 15000+200000
+ 17835 words of font info for 49 fonts, out of 3000000 for 9000
  715 hyphenation exceptions out of 8191
- 43i,7n,35p,589b,422s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 43i,7n,35p,589b,367s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}<C:/Progra
 m Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program 
 Files (x86)/MiKTeX 2.9/fonts/type1/urw/palatino/uplb8a.pfb><C:/Program Files (x
 86)/MiKTeX 2.9/fonts/type1/urw/palatino/uplr8a.pfb>
-Output written on template.pdf (6 pages, 60416 bytes).
+Output written on template.pdf (6 pages, 64675 bytes).
 PDF statistics:
- 84 PDF objects out of 1000 (max. 8388607)
- 15 named destinations out of 1000 (max. 500000)
- 41 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 104 PDF objects out of 1000 (max. 8388607)
+ 19 named destinations out of 1000 (max. 500000)
+ 57 words of extra memory for PDF output out of 10000 (max. 10000000)
 
