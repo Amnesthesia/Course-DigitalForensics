@@ -15,4 +15,31 @@ Its important to keep the key elements of digital forensics in mind:
 %tcpdump -vv -x -X -s 1500 -i eth1 'port 25'
 %port 25/smtp, verbose, print data of each packet, 
 %http = cleartext.
+We decided to set up a TOR exit node using Puppet for easy configuration, and reduced the ports it should allow to the ones we were most interested in. We decided that we were mostly interested in content on the following ports:\\
 
+\begin{itemize}
+	\item 443 - SSL traffic which could perhaps be useful for MITM attacks
+	\item 80 - Default web port
+	\item 6667 - Default IRC port
+	\item 6697 - Default SSL IRC port
+	\item 22 - SSH traffic
+	\item 23 - TELNET traffic
+	\item 25 and 26 - SMTP traffic
+	\item 8888 and 8080 - Common ports for custom web interfaces
+\end{itemize}
+
+After setting up the exit node configuration, we set TCPdump to listen and dump traffic into a plethora of different \textit{.pcap} files. These files we could then use for inspecting packets and follow TCP streams in Wireshark.\\
+
+To further analyze interesting traffics in these files, we could run \textit{p0f}, the passive OS fingerprinting tool to retrieve some further information on a target. Something that makes it rather difficult to do this with TOR traffic is that we can't sort targets based on source IP addresses. This is a result of how TOR creates a path in the onion router network -- let's take an example of Alice sending an email to Bob.\\
+
+Alice creates an email and sends it off to Bob using SMTP through TOR. The first thing that happens is that a path is selected through the TOR network, ending at an exit node. Each packet is encrypted several times, so let's assume this packet will travel through a path of 6 non-exit relays before reaching its destination: The packets are encrypted first with the last nodes "public key", meaning that only the last node can access the unencrypted information. \\
+
+This newly created packet is again encrypted with the destination IP of the relay prior to the last one. This continues until the packet has been encrypted in several "layers", with the last layer being decryptable only by the first relay in the path it will traverse. When the packet is received by the first relay, it "peels off", or decrypts, the first layer of encryption - accessing only a new encrypted packet with a new destination IP to send it off to. \\
+
+Each relay in this path knows only the node it came from and the next node it will go to, but is completely unaware of the final destination or the original source. However, as mentioned above, at the final step -- the exit node -- the entire packet has been decrypted and all content is accessible at this final step of the path, before it reaches the regular internet.\\
+
+This is how exit node sniffing can retrieve Alice's email to Bob, and other information that is deliberately being hidden - but not everything that glimmers is gold and not everyone using TOR is necessarily hiding something you're looking for; targeting someone specifically can be very hard since although content is accessible, the source is not.\\
+
+By analyzing the content for usernames, cookies or sessions, SMTP and HTTP headers, and so on, it can be possible to uncover some information about a specific target, but an issue that may arise here is that although Alice's email may have been picked up, further emails in the same conversation may \textbf{not} be picked up, as you can't know what path in the network a packet will travel and if it will end up using your malicious exit node as the final step in its path.\\
+
+This is where internet bandits and three-letter government agencies have identified and applied a different approach: Reverse connections without TOR. Because the packet is unencrypted at the final step, it's possible to modify the contents. There are multiple ways content could be modified to leak the real IP of the source, such as using known XSS vulnerabilities to trigger a JavaScript xmlHttpRequest which may bypass TOR (this may be hard if a browser with NoScript is used, as is default in the TOR browser bundle), or modifying executable files transmitted over the network.\\  
