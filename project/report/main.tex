@@ -1,0 +1,172 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Simple Sectioned Essay Template
+% LaTeX Template
+%
+% This template has been downloaded from:
+% http://www.latextemplates.com
+%
+% Note:
+% The \lipsum[#] commands throughout this template generate dummy text
+% to fill the template out. These commands should all be removed when 
+% writing essay content.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[12pt]{article} % Default font size is 12pt, it can be changed here
+
+\usepackage{geometry} % Required to change the page size to A4
+
+\usepackage{array}
+\newcolumntype{L}[1]{>{\raggedright\let\newline\\\arraybackslash}p{#1}}
+
+\usepackage{titlesec}
+
+\usepackage{framed}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc} % Use this package to enable the use of special norwegian characters 
+
+
+\geometry{a4paper} % Set the page size to be A4 as opposed to the default US Letter
+
+\usepackage{graphicx} % Required for including pictures
+
+\usepackage{times}
+
+\usepackage{float} % Allows putting an [H] in \begin{figure} to specify the exact location of the figure
+\usepackage{wrapfig} % Allows in-line images such as the example fish picture
+
+\usepackage{cite}
+
+\usepackage{url}
+
+\usepackage{pdfpages}
+
+\usepackage{supertabular} % Used for tables
+
+\usepackage{tocbibind}
+
+\usepackage[parfill]{parskip} % Newline without indent
+
+\usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
+
+\usepackage{array}
+\linespread{1.2} % Line spacing
+
+\usepackage{xcolor,colortbl}
+
+\usepackage[pdftex, pdfborderstyle={/S/U/W 0}]{hyperref} % this disables the boxes around links
+
+
+\setcounter{secnumdepth}{4}
+
+\newcommand*{\myfont}{\fontfamily{arial}\selectfont}
+%\setcounter{section}{1}
+
+%\setlength\parindent{0pt} % Uncomment to remove all indentation from paragraphs
+
+\graphicspath{./graphics/} % Specifies the directory where pictures are stored
+
+\setcounter{tocdepth}{5} %to make it appears in TOC
+%\setcounter{secnumdepth}{5} %to make it numbered
+
+%\titleformat*{\section}{\LARGE\bfseries}
+%\titleformat*{\subsection}{\Large\bfseries}
+%\titleformat*{\subsubsection}{\large\bfseries}
+%\titleformat*{\paragraph}{\footnotesize\bfseries}
+%\titleformat*{\subparagraph}{\large\bfseries}
+
+\titleformat*{\section}{\fontsize{16}{18}\bfseries\sffamily}
+\titleformat*{\subsection}{\fontsize{14}{16}\bfseries\sffamily}
+\titleformat*{\subsubsection}{\fontsize{12}{14}\bfseries\sffamily}
+
+% Syntax highlighting
+
+\usepackage{xcolor}
+\usepackage{listings}
+\lstset{basicstyle=\ttfamily,
+  showstringspaces=false,
+  commentstyle=\color{red},
+  keywordstyle=\color{blue},
+  xleftmargin=-0.5in
+}
+
+\begin{document}
+%----------------------------------------------------------------------------------------
+%	TITLE PAGE
+%----------------------------------------------------------------------------------------
+
+\begin{titlepage}
+
+\newcommand{\HRule}{\rule{\linewidth}{0.5mm}} % Defines a new command for the horizontal lines, change thickness here
+
+\center % Center everything on the page
+\begin{myfont}
+\textsc{{\large Gjøvik University College}}\\[0.5cm] % Name of your university/college
+\end{myfont}
+\HRule \\[0.4cm]
+
+\begin{myfont}
+{ \huge \bfseries Digital Forensics}\\[0cm] % Title of your document
+\end{myfont}
+
+\HRule \\[0.4cm]
+\includegraphics[width=200px, height=200px]{logo}\\[0.8cm] % Include a department/university logo - this will require the graphicx package 403x403px
+\begin{myfont}
+\textsc{\Large Anti-Forensics}\\[0.5cm] % Major heading such as course name
+\textsc{\large Group Project}\\[0.5cm] % Minor heading such as course title
+\end{myfont}
+
+
+\begin{minipage}{0.44\textwidth}
+\begin{flushleft} \large
+%\emph{Authors:}\\
+\begin{myfont}
+Victor \textsc{Rudolfsson} - 120912\\ % Your name
+Jan  \textsc{Samuelsen Lindemann} - 1209xx\\ % Your name
+\end{myfont}
+\end{flushleft}
+\end{minipage}
+
+% Syntax highlighting
+
+
+\vfill % Fill rest of the page with empty lines
+{\large \today}\\[3cm] % Date, change the \today to a set date if you want to be precise
+
+\end{titlepage}
+
+%----------------------------------------------------------------------------------------
+%	TABLE OF CONTENTS
+%----------------------------------------------------------------------------------------
+%\clearpage\mbox{}\clearpage
+%\tableofcontents % Include a table of contents
+%\newpage % Begins the essay on a new page instead of on the same page as the table of contents 
+%\clearpage\mbox{}\clearpage
+
+%----------------------------------------------------------------------------------------
+%	Contents
+%----------------------------------------------------------------------------------------
+\section{Introduction}
+\input{"introduction.tex"} % Includes the file that contains the introduction
+\subsection{Proxies}
+\input{"proxies.tex"}
+\subsection{VPN}
+\input{"vpn.tex"}
+\subsection{TOR (Onion Router)}
+\input{"tor.tex"}
+\section{Experiment}
+\input{"experiment.tex"}
+\section{Conclusion}
+
+%----------------------------------------------------------------------------------------
+%	BIBLIOGRAPHY (References)
+%----------------------------------------------------------------------------------------
+\bibliographystyle{unsrt}
+\bibliography{references}
+
+%----------------------------------------------------------------------------------------------------------------------------------------------------
+\end{document}

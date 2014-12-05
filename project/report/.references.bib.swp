@@ -1,0 +1,6 @@
+@misc{grsecTPE,
+      howpublished = {\url{http://wiki.gentoo.org/wiki/Hardened/Grsecurity_Trusted_Path_Execution}},
+      note = {Accessed Sep 2, 2014},
+      title = "Hardened\/Grsecurity Trusted Path Execution",
+      author = {Francisco Blas Izquierdo Riera}
+}

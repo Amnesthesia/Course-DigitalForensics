@@ -1,0 +1,37 @@
+\begin{thebibliography}{1}
+
+\bibitem{usenixTPE}
+Niki~A. Rahimi.
+\newblock Trusted path execution for the linux 2.6 kernel as a linux security
+  module.
+\newblock
+  \url{https://www.usenix.org/legacy/events/usenix04/tech/freenix/full_papers/rahimi/rahimi_html/}.
+\newblock Accessed Sep 2, 2014.
+
+\bibitem{grsecTPE}
+Francisco Blas~Izquierdo Riera.
+\newblock Hardened\/grsecurity trusted path execution.
+\newblock
+  \url{http://wiki.gentoo.org/wiki/Hardened/Grsecurity_Trusted_Path_Execution}.
+\newblock Accessed Sep 2, 2014.
+
+\bibitem{lkmTPE}
+Corey Henderson.
+\newblock Trusted path execution linux kernel module.
+\newblock \url{https://github.com/cormander/tpe-lkm/}.
+\newblock Accessed Sep 2, 2014.
+
+\bibitem{lkmfaqTPE}
+Corey Henderson.
+\newblock Trusted path execution linux kernel module faq.
+\newblock \url{https://github.com/cormander/tpe-lkm/blob/master/FAQ}.
+\newblock Accessed Sep 2, 2014.
+
+\bibitem{grsecTPEcode}
+ncopa.
+\newblock grsec\_tpe.c.
+\newblock
+  \url{https://github.com/ncopa/linux-stable-grsec/blob/5f12d03978dee3de26cd27657f7aac60dacf780d/grsecurity/grsec_tpe.c}.
+\newblock Accessed Sep 2, 2014.
+
+\end{thebibliography}
