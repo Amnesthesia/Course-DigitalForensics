@@ -1,4 +1,31 @@
-\documentclass[a4paper,11pt,pdftex,english,norsk]{article}
+\documentclass[a4paper,12pt,pdftex,norsk,english]{article}
+
+\usepackage{titlesec}
+\usepackage{framed}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx} % Required for including pictures
+\usepackage{times}
+\usepackage{float} % Allows putting an [H] in \begin{figure} to specify the exact location of the figure
+\usepackage{wrapfig} % Allows in-line images such as the example fish picture
+\usepackage{cite}
+\usepackage{url}
+\usepackage{pdfpages}
+\usepackage{supertabular} % Used for tables
+\usepackage{tocbibind}
+\usepackage[parfill]{parskip} % Newline without indent
+\usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
+\usepackage{array}
+\usepackage{xcolor,colortbl}
+% Syntax highlighting
+\usepackage{xcolor}
+\usepackage{listings}
+\lstset{basicstyle=\ttfamily,
+  showstringspaces=false,
+  commentstyle=\color{red},
+  keywordstyle=\color{blue},
+  xleftmargin=-0.5in
+}
+
 % my av dette er noe greier som ligger igjen fra tidligere prosjekter.
 \usepackage{babel}
 \usepackage{amsmath}
@@ -13,17 +40,30 @@
 \usepackage{geometry}
 %\usepackage{textcomp}
 %\usepackage{type1cm}
-\usepackage[table]{xcolor}
 \usepackage{varioref}
 \usepackage{url}
 \usepackage{listings}
 \usepackage[bookmarks=true, linkcolor=blue,
 citecolor=blue,urlcolor=blue,colorli nks=true, breaklinks=true,
-pagebackref=true, hyperindex=true,bookmarksopen=true]{hyperref}
+pagebackref=true, hyperindex=true,bookmarksopen=true, pdftex, pdfborderstyle={/S/U/W 0}]{hyperref}
 \usepackage{enumitem}
 \newlist{arrowlist}{itemize}{1}
 \setlist[arrowlist]{label=$\Rightarrow$}
+\newcolumntype{L}[1]{>{\raggedright\let\newline\\\arraybackslash}p{#1}}
+\geometry{a4paper} % Set the page size to be A4 as opposed to the default US Letter
+\linespread{1.2} % Line spacing
+\setcounter{secnumdepth}{4}
 
+\newcommand*{\myfont}{\fontfamily{arial}\selectfont}
+%\setcounter{section}{1}
+
+\graphicspath{./graphics/} % Specifies the directory where pictures are stored
+
+\setcounter{tocdepth}{5} %to make it appears in TOC
+
+\titleformat*{\section}{\fontsize{16}{18}\bfseries\sffamily}
+\titleformat*{\subsection}{\fontsize{14}{16}\bfseries\sffamily}
+\titleformat*{\subsubsection}{\fontsize{12}{14}\bfseries\sffamily}
 \frenchspacing
 
 %% Block style paragrphs

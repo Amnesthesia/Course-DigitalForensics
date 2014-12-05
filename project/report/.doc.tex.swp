@@ -1,7 +1,0 @@
-Text goes here
-
-\begin{lstlisting}[language=bash,caption={Example of Syntax Highlighting}]
-Bash code goes here
-\end{lstlisting}
-
-%\includegraphics[scale=0.5]{nw.png} % Include an image
