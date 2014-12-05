@@ -1,86 +1,57 @@
-% This file was created with JabRef 2.10.
+% This file was created with JabRef 2.9.2.
 % Encoding: Cp1252
 
-
-@Electronic{broinstall,
-  Title                    = {Installing Bro},
-  Url                      = {https://www.bro.org/sphinx/install/install.html},
-
-  Owner                    = {Anders},
-  Timestamp                = {2014.11.24}
+@ELECTRONIC{torrouter,
+  author = {Martin Anderson},
+  month = {November},
+  year = {2014},
+  title = {81% of Tor users can be de-anonymised by analysing router information,
+	research indicates},
+  organization = {The Stack},
+  url = {http://thestack.com/chakravarty-tor-traffic-analysis-141114},
+  owner = {Jan},
+  timestamp = {2014.12.04}
 }
 
-@Electronic{broorg,
-  Title                    = {The Bro Network Security Monitor},
-  Url                      = {https://www.bro.org/},
-
-  Owner                    = {Anders},
-  Timestamp                = {2014.11.24}
+@ELECTRONIC{nsamitm,
+  author = {Bruce Schneier},
+  month = {October},
+  year = {2014},
+  title = {Attacking Tor: how the NSA targets users' online anonymity},
+  organization = {the guardian},
+  url = {http://www.theguardian.com/world/2013/oct/04/tor-attacks-nsa-users-online-anonymity},
+  owner = {Jan},
+  timestamp = {2014.12.04}
 }
 
-@Electronic{broveview,
-  Title                    = {Overview},
-  Organization             = {The Bro Project},
-  Url                      = {https://www.bro.org/sphinx/intro/index.html},
-
-  Owner                    = {Anders},
-  Timestamp                = {2014.11.24}
+@ELECTRONIC{wiki_canvas,
+  author = {Wikipedia},
+  month = {december},
+  year = {2014},
+  title = {Canvas fingerprinting --- Wikipedia{,} The Free Encyclopedia},
+  organization = {Wikipedia},
+  url = {http://en.wikipedia.org/w/index.php?title=Canvas_fingerprinting&oldid=633888278},
+  owner = {Jan},
+  timestamp = {2014.12.04}
 }
 
-@Electronic{downloads,
-  Title                    = {Downloads},
-  Url                      = {https://www.bro.org/download/index.html},
-
-  Owner                    = {Anders},
-  Timestamp                = {2014.11.25}
+@ELECTRONIC{appnexus,
+  month = {december},
+  year = {2014},
+  title = {AppNexus Cookies},
+  organization = {appnexus},
+  url = {http://www.appnexus.com/cookies},
+  owner = {Jan},
+  timestamp = {2014.12.04}
 }
 
-@Electronic{emne,
-  Title                    = {Systemadministrasjon},
-  Url                      = {http://hig.no/content/view/full/31049/language/nor-NO},
-
-  Owner                    = {Anders},
-  Timestamp                = {2014.11.24}
-}
-
-@Electronic{Jessie,
-  Title                    = {Debian Jessie},
-  Url                      = {https://wiki.debian.org/DebianJessie},
-
-  Owner                    = {Anders},
-  Timestamp                = {2014.11.25}
-}
-
-@Electronic{panamanbro,
-  Title                    = {Panaman/Bro},
-  HowPublished             = {forge.puppetlabs.com},
-  Url                      = {https://forge.puppetlabs.com/panaman/bro},
-
-  Owner                    = {Anders},
-  Timestamp                = {2014.11.24}
-}
-
-@Electronic{panbrovar,
-  Title                    = {Panaman/Bro - Variables},
-  Url                      = {https://forge.puppetlabs.com/panaman/bro/readme#other-customizable-variables},
-
-  Owner                    = {Anders},
-  Timestamp                = {2014.11.25}
-}
-
-@Electronic{Puppetlabs,
-  Title                    = {Puppetlabs},
-  Url                      = {http://puppetlabs.com/},
-
-  Owner                    = {Anders},
-  Timestamp                = {2014.11.24}
-}
-
-@Electronic{reprepro,
-  Title                    = {SettingUpSignedAptRepositoryWithReprepro},
-  Url                      = {https://wiki.debian.org/SettingUpSignedAptRepositoryWithReprepro},
-
-  Owner                    = {Anders},
-  Timestamp                = {2014.11.25}
+@ELECTRONIC{fsecapt,
+  month = {November},
+  year = {2014},
+  title = {OnionDuke: APT Attacks Via the Tor Network},
+  organization = {FSLabs},
+  url = {https://www.f-secure.com/weblog/archives/00002764.html},
+  owner = {Jan},
+  timestamp = {2014.11.14}
 }
 
